@@ -2,11 +2,10 @@ import pandas as pd
 from sqlalchemy import create_engine, text
 import psycopg2
 import sys
-from config import BASE_FILE_PATH, DATA_2025_PATH,DATA_2025_URL, PG_USER, PG_PASSWORD, PG_HOST, PG_PORT, DB_NAME, TABLE_NAME
-
+from config import *
 def load_data(base_file_path):
     try:
-        available_years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+        available_years = [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
         my_list = []
         for i in available_years:
             data = pd.read_csv(base_file_path + str(i) + ".csv", sep=";")

@@ -1,4 +1,4 @@
-from config import DATA_2025_URL, DATA_2025_PATH
+from config import *
 import os
 import requests
 from datetime import datetime
@@ -14,7 +14,7 @@ headers = {
     "Connection": "keep-alive",
 }
 
-def data_downloader(url=DATA_2025_URL, save_path=DATA_2025_PATH):
+def data_downloader(url=DATA_2026_URL, save_path=DATA_2026_PATH):
     print("Downloading data from :", url)
     
     try:
