@@ -11,6 +11,6 @@ BASE_FILE_PATH = "Data/livelli_bilancino_"
 PG_USER = "metabase_user" 
 PG_PASSWORD = os.getenv("METABASE_PSW")
 PG_HOST = "localhost"
-PG_PORT = 5432
+PG_PORT = 5433
 DB_NAME = "bilancino"
 TABLE_NAME = "livelli"
